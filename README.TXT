@@ -30,6 +30,10 @@ Richard
 
 CHANGELOG
 ---------
+3.6.0.0         Correct preset settings array error for PHP7
+                Add course admin link to student pull out
+                Update for Boost/Moodle3.6 - templates, progress radial->progress bar
+3.5.1.1         Correct course header image display bug
 3.5.1.0         Add Privacy api
                 Make stable for 3.5 new Boost version
 3.5.0.0         Rework theme for Moodle3.5

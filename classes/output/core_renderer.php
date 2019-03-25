@@ -457,7 +457,7 @@ class core_renderer extends \theme_boost\output\core_renderer {
                 'hasprogress' => $hasprogress,
                 'progress' => $comppercent
             ];
-            $progresschart = $this->render_from_template('block_myoverview/progress-chart', $progresschartcontext);
+            $progresschart = $this->render_from_template('block_myoverview/progress-bar', $progresschartcontext);
             $gradeslink = new moodle_url('/grade/report/user/index.php', array('id' => $PAGE->course->id));
 
             $stulinksgroup = array();
@@ -470,6 +470,12 @@ class core_renderer extends \theme_boost\output\core_renderer {
                         );
                 }
             }
+            $stulinksgroup[] = array(
+                    'name' => get_string('courseadmin', 'theme_handlebar'),
+                    'url' => new moodle_url('/course/admin.php', array('courseid' => $PAGE->course->id)),
+                    'icon' => 'dashboard'
+                    );
+
             if (count($stulinksgroup) > 0 ) {
                 $hasstulinksgroup = array(
                     'title' => get_string('modalstudentlinks', 'theme_handlebar'),

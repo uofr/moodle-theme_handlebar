@@ -170,7 +170,7 @@ $string['coursebackup'] = 'Create course/item backup';
 $string['courserestore'] = 'Restore an existing course/item backup';
 $string['courseimport'] = 'Import content from another course';
 $string['courserecyclebin'] = 'Recycle bin';
-$string['courseadmin'] = 'Full course administration options';
+$string['courseadmin'] = 'Full course options';
 // User links.
 $string['manageusers'] = 'Enrolled users';
 $string['manualenrol'] = 'Manually enrol new users';
